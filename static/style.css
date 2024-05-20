@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn1 {
+    padding: 50px 20px;
+    margin: 10px;
+    font-size: 25px;
+    background-color: #b40cb4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2 {
+    padding: 50px 20px;
+    margin: 10px;
+    font-size: 25px;
+    background-color: #8fcc24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1 a, .btn2 a {
+            color: white;
+            text-decoration: none;
+        }
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: calc(90% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.container button[type="submit"],
+.container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container button[type="submit"]:hover,
+.container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

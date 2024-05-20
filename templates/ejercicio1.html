@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h2>Calculo de compras</h2>
+<div class="container">
+<form method="POST">
+    <label for="nombre">Ingresa tu nombre</label>
+    <input type="text" name="nombre"><br><br>
+    <label>Ingresa tu edad
+    <input type="number" name="edad">
+    </label><br><br>
+    <label>Ingresa la cantidad de tarros de pintura a comprar
+    <input type="number" name="cantidad">
+    </label><br><br>
+    <input type="submit" value="Calcular">
+
+     {% if total_sin_descuento is defined and total_con_descuento is defined %}
+        <h2>Resultado</h2>
+        <p>Nombre: {{ nombre }}</p>
+        <p>Total sin descuento: ${{ total_sin_descuento }}</p>
+        <p>Total a pagar con descuento: ${{ total_con_descuento }}</p>
+    {% endif %}
+</form>
+</div>
+</body>
+</html>
